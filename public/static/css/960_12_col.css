@@ -21,8 +21,9 @@ body {
 ----------------------------------------------------------------------------------------------------*/
 
 .container_12 {
+    /*commented out to left justify
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
   width: 960px;
 }
 
