@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block articles_url %}
+    <a href="articles" class="active">Makaleler</a>
+{% endblock %}
+
+
+{% block content %}
+    <div class="grid_3 left_menu">
+        <ul>
+            <li><a href="articles/kanser_genel_bilgi">Kanser Genel Bilgi</a></li>
+            <li><a href="articles/kanser_tarama_rehberi">Kanser Tarama Rehberi</a></li>
+            <li><a href="articles/meme_kanseri">Meme Kanseri</a></li>
+            <li><a href="articles/akciger_kanseri">Akciğer Kanseri</a></li>
+            <li><a href="articles/kanser_disi_goz_hastaliklari">Kanser dışı göz hastalıkları</a></li>
+            <li><a href="articles/radyasyon_onkolojisi">Radyasyon Onkolojisi</a></li>
+        </ul>
+    </div>
+{% endblock %}

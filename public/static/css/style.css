@@ -1,0 +1,89 @@
+/*** DEFAULTS ***/
+body {
+    color: #555;
+    font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background: #FFF;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #555;
+}
+
+a:visited {
+    color: #555;
+}
+
+a:hover {
+    color: #555;
+}
+
+a:active {
+    color: #555;
+}
+
+.active {
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
+
+/*** SITE ***/
+.header {
+    height: 50px;
+    border-bottom: 1px solid #dadada;
+}
+
+.header .main_title {
+    background-color: white;
+    float: left;
+    padding: 0 10px 0 10px;
+    margin: 32px 0 0 140px;
+}
+
+ul.top_menu li, ul.bottom_menu li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer {
+    background-color: #F4F4F4;
+    clear: both;
+    min-height: 90px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.footer li {
+    display: inline;
+    font-size: 1.1em;
+    font-style: normal;
+}
+
+.footer li a {
+    color: #935600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*** LEFT MENU ***/
+div.left_menu {
+    border-right: 1px solid #dadada;
+}
+
+div.left_menu li:hover a {
+    border-bottom: 1px solid #935600;
+}
+
