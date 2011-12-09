@@ -1,9 +1,16 @@
 @color_dark_bg: #2d2d2d;
 @color_light_bg: #f6f6f3;
 @color_light_fg: #cfcfcf;
+@color_topmenu_unactive: #434343;
+@color_bottommenu_fg: #b8b8b8;
+@color_header2_bottomborder: #f0f0ed;
 
 .lightfg {
     color: @color_light_fg;
+}
+
+.text-center {
+    text-align: center;
 }
 
 #header1 {
@@ -13,11 +20,8 @@
 
 #header2 {
     background-color: @color_light_bg;
+    border-bottom: 1px solid @color_header2_bottomborder;
     height: 100px;
-}
-
-#menubar {
-    height: 42px;
 }
 
 #content {
@@ -25,12 +29,79 @@
 }
 
 #footer {
-    background-color: @color_dark_bg;
-    height: 37px;
 }
 
 .reddot {
     background: url("/static/img/reddot.gif") no-repeat 0px 8px;
     margin-left: 10px;
     padding-left: 10px;
+}
+
+
+/************
+ * TOP MENU *
+ ************/
+
+#topMenuBar {
+    background: url("/static/img/topmenu_bottom.jpg") repeat-x bottom;
+    padding-bottom: 3px;
+}
+
+#top_menu {
+}
+
+#top_menu li {
+    float: left;
+    list-style: none;
+    /*background: url("/static/img/topmenu_arrow.gif") no-repeat center -10px;*/
+}
+
+#top_menu li a span.linkbox {
+    color: @color_topmenu_unactive;
+}
+
+#top_menu li a:hover span.linkbox {
+    background-color: @color_dark_bg;
+    color: @color_light_fg;
+}
+
+#top_menu li a.active span.linkbox {
+    color: @color_light_fg;
+    background-color: @color_dark_bg;
+}
+
+#top_menu span.linkbox {
+    display: block;
+    padding: 1em 0.5em;
+}
+
+/***************
+ * BOTTOM MENU *
+ ***************/
+
+#bottomMenuBar {
+    background-color: @color_dark_bg;
+}
+
+#bottom_menu {
+    float: right;
+}
+
+#bottom_menu li {
+    float: left;
+    list-style: none;
+    /*background: url("/static/img/topmenu_arrow.gif") no-repeat center -10px;*/
+}
+
+#bottom_menu li a span.linkbox {
+    color: @color_bottommenu_fg;
+}
+
+#bottom_menu li a:hover span.linkbox {
+    text-decoration: underline;
+}
+
+#bottom_menu span.linkbox {
+    display: block;
+    padding: 1em 0.5em;
 }

@@ -7,12 +7,12 @@
     <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/reset.css"/>
     <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/960_12_col.css"/>
     <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/style.less">
-    <script type="text/javascript" src="{{ STATIC_URL }}less-1.1.5.min.js" ></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}less-1.1.5.min.js"></script>
 </head>
 <body>
 <div id="header1">
     <div class="container_12 lightfg">
-        <div class="grid_6">sdfsdf</div>
+        <div class="grid_6">MORBI CONDIMENTUM VITAE</div>
         <div class="grid_6">
             <span class="reddot">lorem ipsum dolor sit amet</span>
             <span class="reddot">telefon 0212 274 41 41</span>
@@ -21,11 +21,32 @@
 </div>
 
 <div id="header2">
-    <div class="container_12"></div>
+    <div class="container_12">
+        <div class="grid_11">
+            <div>
+                <span>prof. dr.</span><span>AHMET ÖBER</span>
+            </div>
+            <div>
+                <span>ONKOLOJI UZMANI</span>
+                <span>Medikal Direktör</span>
+            </div>
+        </div>
+        <div class="grid_1">aAA</div>
+    </div>
 </div>
 
-<div id="menuBar">
-    <div class="container_12"></div>
+<div id="topMenuBar">
+    <div class="container_12">
+        <div class="grid_12">
+            <ul id="top_menu">
+                <li>{% block home_url %}<a href="/ahmetober"><span class="linkbox">ANA SAYFA</span></a>{% endblock %}</li>
+                <li>{% block articles_url %}<a href="articles"><span class="linkbox">MAKALELER</span></a>{% endblock %}</li>
+                <li>{% block cv_url %}<a href="cv"><span class="linkbox">BİYOGRAFİ</span></a>{% endblock %}</li>
+                <li>{% block sss_url %}<a href="sss"><span class="linkbox">SSS</span></a>{% endblock %}</li>
+                <li>{% block contact_url %}<a href="contact"><span class="linkbox">İLETİŞİM</span></a>{% endblock %}</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <div id="content">
@@ -36,18 +57,6 @@
     <div class="container_12"></div>
 </div>
 
-<div class="container_12">
-    <div class="grid_7 prefix_5">
-        <ul class="top_menu">
-            <li>{% block home_url %}<a href="/ahmetober">Ana Sayfa</a>{% endblock %}</li>
-            <li>{% block articles_url %}<a href="articles">Makaleler</a>{% endblock %}</li>
-            <li>{% block cv_url %}<a href="cv">Biyografi</a>{% endblock %}</li>
-            <li>{% block sss_url %}<a href="sss">SSS</a>{% endblock %}</li>
-            <li>{% block contact_url %}<a href="contact">İletişim</a>{% endblock %}</li>
-        </ul>
-    </div>
-</div>
-
 <div class="content">
     <div class="container_12">
         {% block content %}{% endblock %}
@@ -55,18 +64,23 @@
 </div>
 
 <div class="footer">
-    <div class="container_12">
-        <div class="grid_8 suffix_2 prefix_2 bottom_menu_container">
-            <ul class="text-center">
-                <li><a href="/ahmetober">Ana Sayfa</a></li>
-                <li><a href="articles">Makaleler</a></li>
-                <li><a href="cv">Biyografi</a></li>
-                <li><a href="sss">SSS</a></li>
-                <li><a href="contact">İletişim</a></li>
-            </ul>
+    <div id="bottomMenuBar">
+        <div class="container_12">
+            <div class="grid_12">
+                <ul id="bottom_menu">
+                    <li><a href="/ahmetober"><span class="linkbox">Ana Sayfa</span></a></li>
+                    <li><a href="articles"><span class="linkbox">Makaleler</span></a></li>
+                    <li><a href="cv"><span class="linkbox">Biyografi</span></a></li>
+                    <li><a href="sss"><span class="linkbox">SSS</span></a></li>
+                    <li><a href="contact"><span class="linkbox">İletişim</span></a></li>
+                </ul>
+            </div>
         </div>
+    </div>
+    <div class="container_12">
         <div class="grid_12">
             <p class="text-center">Copyright @ 2011 Ahmet Öber</p>
+
             <p class="text-center">Tüm hakları saklıdır.</p>
         </div>
     </div>
