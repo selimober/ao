@@ -1,10 +1,40 @@
 {% extends "base.html" %}
 
 {% block home_url %}
-    <a href="/ahmetober" class="active"><span class="linkbox">ANA SAYFA</span></a>
+    <a href="/ahmetober" class="active">ANA SAYFA</a>
+{% endblock %}
+
+{% block pagecss %}
+    <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/mainpage.less">
 {% endblock %}
 
 
 {% block content %}
+    <div class="left">
+        <img src="{{ STATIC_URL }}img/home_portrait.jpg" width="324px" height="299px"/>
+    </div>
+    <div class="right">
+        <h1>Primum non nocere!</h1>
 
+        <p class="bookmark">Bu bize tıp eğitimine başlarken ilk öğretilen kuraldır. "İlk önce zarar verme!"
+            Yani yaptığın tedavi, girişim, yarar umarken zarar vermesin, hastayı daha kötü etmesin.
+            Doktor olarak, profesyonel hayatımız hep bu hesabı yapmakla geçer. Yapılacak tedavide
+            fayda ne kadar, zararımız dokunur mu?</p>
+    
+        <p>Hastalarımız da bu eğitimi almadıkları halde, yaşam tecrübeleri ile, tedavi kararını
+           verirken bizden bu sorunun cevabını net olarak almayı bekler.</p>
+    
+        <p class="bookmark">Tıbbın hastayı ve yakınlarını en çok korkutan alanında, onkolojinin temel dallarından
+           birinde çalışıyorum. Bilgisayar mühendisi olan oğlumun bir tanıtım sayfası yapma önerilerini
+           Aralık 2011 e kadar hep reddettim. Ülke şartlarının değişmesi ile kurumlar çok değişikliğe
+           uğradı. Doktorların çoğunun son görev yerinin neresi olduğunu belirlemek bazen bayağı emek
+           gerektiriyor. En azından ben, bu yönde serzenişler alıyorum. Sonunda ben de önerilere, belki de
+           çağın kısmen direndiğim akışına uyarak bu sayfayı hazırladım.</p>
+
+        <p>Sık rastlanılan kanserlerle ilgili bazı bilgileri size kısaca açıklamanın, yararlı olabileceğini
+           düşündüm. İlk önce zarar verme öğretisini de en başa koydum.
+
+        </p>
+
+    </div>
 {% endblock %}

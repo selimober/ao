@@ -1,0 +1,47 @@
+@unit_pageWidth: 960px;
+
+body #content {
+    min-height: 462px;
+}
+
+#content {
+
+    .container {
+        margin: 0;
+        padding-top: 2em;
+        width: @unit_pageWidth;
+    }
+
+    h1 {
+        font-size: 1.25em;
+        padding-left: 16px;
+        color: #373737
+    }
+    
+    p {
+        font-size: 1em;
+        padding: 1em 0 0 16px;
+        color: #6a6a6a;
+        font-family: georgia, serif;
+        line-height: 1.375;
+
+
+    }
+
+    p.bookmark {
+        background: url("/static/img/bookmark.jpg") no-repeat 0 1.3em;
+    }
+    .left, .right {
+        float: left;
+    }
+
+    .left {
+        width: 334px;
+    }
+
+    .right {
+        width: @unit_pageWidth - 354px;
+        padding-left: 20px
+    }
+
+}
