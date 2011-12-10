@@ -1,4 +1,4 @@
-@unit_pageWidth: 960px;
+@import url("variables.less");
 
 body #content {
     min-height: 462px;
@@ -32,16 +32,15 @@ body #content {
         background: url("/static/img/bookmark.jpg") no-repeat 0 1.3em;
     }
     .left, .right {
-        float: left;
     }
 
     .left {
-        width: 334px;
+        width: @unit_homePortraitWidth;
+        float: left;
     }
 
     .right {
-        width: @unit_pageWidth - 354px;
-        padding-left: 20px
+        margin-left: @unit_homePortraitWidth + 30px;
     }
 
 }

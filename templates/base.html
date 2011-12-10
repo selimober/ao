@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/reset.css"/>
     <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/style.less">
     {% block pagecss %}{% endblock %}
+    {% block subpagecss %}{% endblock %}
     <script type="text/javascript" src="{{ STATIC_URL }}less-1.1.5.min.js"></script>
     <script type="text/javascript" src="http://use.typekit.com/kud1hrj.js"></script>
     <script type="text/javascript">try {
@@ -38,10 +39,11 @@
 </div>
 
 <div id="topMenuBar">
+    <img src="{{ STATIC_URL }}img/pulse.jpg" width="132" height="24" alt="pulse"/>
     <div class="container">
-        <ul id="top_menu">
+        <ul id="top_menu" class="h_menu">
             <li>{% block home_url %}<a href="/ahmetober">ANA SAYFA</a>{% endblock %}</li>
-            <li>{% block articles_url %}<a href="articles">KONULAR</a>{% endblock %}</li>
+            <li>{% block articles_url %}<a href="articles/kanser_genel_bilgi">KONULAR</a>{% endblock %}</li>
             <li>{% block cv_url %}<a href="cv">BİYOGRAFİ</a>{% endblock %}</li>
             <li>{% block sss_url %}<a href="sss">SSS</a>{% endblock %}</li>
             <li>{% block contact_url %}<a href="contact">İLETİŞİM</a>{% endblock %}</li>
@@ -58,7 +60,7 @@
 <div id="footer">
     <div id="bottomMenuBar">
         <div class="container">
-            <ul id="bottom_menu">
+            <ul id="bottom_menu" class="h_menu">
                 <li><a href="/ahmetober">Ana Sayfa</a></li>
                 <li><a href="articles">Konular</a></li>
                 <li><a href="cv">Biyografi</a></li>

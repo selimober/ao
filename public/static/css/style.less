@@ -1,11 +1,4 @@
-@color_dark_bg: #2d2d2d;
-@color_light_bg: #f6f6f3;
-@color_light_fg: #cfcfcf;
-@color_topmenu_unactive: #434343;
-@color_bottommenu_fg: #b8b8b8;
-@color_header2_bottomborder: #f0f0ed;
-@color_fontSizeChanger: #898989;
-@unit_pageWidth: 58em;
+@import url("variables.less");
 
 .rounded-corners (@radius: 5px) {
   border-radius: @radius;
@@ -37,6 +30,16 @@ div.container {
 
 body {
     font-family: Tahoma,Arial,Helvetica,sans-serif;
+}
+
+ul.h_menu {
+    list-style: none;
+
+    li {
+        display: inline;
+        list-style: none;
+    }
+
 }
 
 #header1 {
@@ -112,16 +115,19 @@ body {
     background: url("/static/img/topmenu_bottom.jpg") repeat-x bottom;
     padding-bottom: 3px;
     .menu_font;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: -16px;
+    }
 
     #top_menu {
-        list-style: none;
         padding: 1em 0;
         position: relative;
         left: -0.5em;
 
         li {
-            display: inline;
-            list-style: none;
             /*background: url("/static/img/topmenu_arrow.gif") no-repeat center -10px;*/
 
              a {
@@ -142,12 +148,8 @@ body {
     }
 }
 
-#content {
-    min-height: 362px;
-}
-
 #footer {
-
+    clear: both;
     .menu_font;
 
     #bottomMenuBar {
@@ -159,12 +161,9 @@ body {
         }
 
         #bottom_menu {
-            list-style: none;
             padding: 0.5em 0;
 
             li {
-                display: inline;
-                list-style: none;
 
                 a {
                     padding: 0.5em 0.5em;
