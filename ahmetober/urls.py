@@ -3,7 +3,7 @@ from django.conf.urls.defaults import patterns, url
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
-from ahmetober.views import IndexView, ContactView, SSSView, ArticlesView, CVView
+from ahmetober.views import IndexView, ContactView, SSSView, ArticlesView, CVView, TodoView
 from settings import DEBUG
 
 urlpatterns = patterns('',
@@ -21,6 +21,7 @@ urlpatterns = patterns('',
     url(r'^sss$', SSSView.as_view()),
     url(r'^cv$', CVView.as_view()),
     url(r'^contact$', ContactView.as_view()),
+    url(r'^todo$', TodoView.as_view()),
     url(r'^articles/(.*)', 'ahmetober.views.article'),
 )
 

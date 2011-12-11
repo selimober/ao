@@ -1,20 +1,60 @@
 @import url("variables.less");
 
+h1 {
+    font-style: italic;
+}
+
+h3 {
+    margin-left: @unit_containerMarginLeft * -1;
+    padding-left: @unit_containerMarginLeft;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background: url("/static/img/bookmark.jpg") no-repeat 1.25em 0.3em;
+}
+
+#topMenuBar {
+    padding-bottom: 0 !important;
+    background: none !important;
+}
+
+#subMenuBar {
+    background-color: @color_dark_bg;
+}
+
 #articles_menu {
     padding: 0.25em 0;
 
-    a {
-        padding: 0.25em 0.5em;
-        color: @color_topmenu_unactive;
+    li {
+        border-right: 1px solid @color_light_fg;
+        margin: -5px;
+    }
+    
+    li.last {
+        border-right: none;
     }
 
-    a:hover {
-        background-color: @color_dark_bg;
+    a {
+        padding: 0.25em 1.15em;
         color: @color_light_fg;
     }
 
-    a.active {
-        color: #6fe9ff;
-        background-color: @color_dark_bg;
+    a:hover {
+        color: @color_subMenuActive;
     }
+
+    a.active {
+        color: @color_subMenuActive;
+    }
+}
+
+.left, .right {
+    width: @unit_articleColumnWidth - 1em;
+    float: left;
+}
+
+.left {
+}
+
+.right {
+    margin-left: 2em;
 }

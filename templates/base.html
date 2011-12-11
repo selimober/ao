@@ -9,11 +9,12 @@
     {% block pagecss %}{% endblock %}
     {% block subpagecss %}{% endblock %}
     <script type="text/javascript" src="{{ STATIC_URL }}less-1.1.5.min.js"></script>
+    <!--
     <script type="text/javascript" src="http://use.typekit.com/kud1hrj.js"></script>
     <script type="text/javascript">try {
         Typekit.load();
     } catch (e) {
-    }</script>
+    }</script>-->
 </head>
 <body>
 <div id="header1">
@@ -47,9 +48,13 @@
             <li>{% block cv_url %}<a href="cv">BİYOGRAFİ</a>{% endblock %}</li>
             <li>{% block sss_url %}<a href="sss">SSS</a>{% endblock %}</li>
             <li>{% block contact_url %}<a href="contact">İLETİŞİM</a>{% endblock %}</li>
+            <li><a href="todo">TODO</a> </li>
         </ul>
     </div>
 </div>
+{% block submenuBlock %}
+
+{% endblock %}
 
 <div id="content">
     <div class="container">

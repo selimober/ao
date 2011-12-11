@@ -1,7 +1,6 @@
 from django.http import  Http404
-from django.shortcuts import render_to_response, render
+from django.shortcuts import  render
 from django.template.base import TemplateDoesNotExist
-from django.template.context import RequestContext
 from django.views.generic.base import TemplateView
 
 class IndexView(TemplateView):
@@ -15,6 +14,9 @@ class CVView(TemplateView):
 
 class ContactView(TemplateView):
     template_name = "contact.html"
+
+class TodoView(TemplateView):
+    template_name = "todo.html"
 
 class SSSView(TemplateView):
     template_name = "sss.html"

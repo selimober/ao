@@ -9,19 +9,20 @@
 {% endblock %}
 
 
-{% block content %}
-    <div>
-        <ul id="articles_menu" class="h_menu">
-            <li>{% block articles_genelBilgi_url %}<a href="articles/kanser_genel_bilgi">Kanser Genel Bilgi</a>{% endblock %}</li>
-            <li><a href="articles/kanser_tarama_rehberi">Kanser Tarama Rehberi</a></li>
-            <li><a href="articles/meme_kanseri">Meme Kanseri</a></li>
-            <li><a href="articles/akciger_kanseri">Akciğer Kanseri</a></li>
-            <li><a href="articles/kanser_disi_goz_hastaliklari">Kanser dışı göz hastalıkları</a></li>
-            <li><a href="articles/radyasyon_onkolojisi">Radyasyon Onkolojisi</a></li>
-        </ul>
+{% block submenuBlock %}
+    <div id="subMenuBar">
+        <div class="container">
+            <ul id="articles_menu" class="h_menu">
+                <li>{% block articles_genelBilgi_url %}<a href="kanser_genel_bilgi">Kanser Genel Bilgi</a>{% endblock %}</li>
+                <li>{% block articles_taramaRehberi_url %}<a href="kanser_tarama_rehberi">Kanser Tarama Rehberi</a>{% endblock %}</li>
+                <li>{% block articles_memeKanseri_url %}<a href="meme_kanseri">Meme Kanseri</a>{% endblock %}</li>
+                <li>{% block articles_akcigerKanseri_url %}<a href="akciger_kanseri">Akciğer Kanseri</a>{% endblock %}</li>
+                <li>{% block articles_kanserDisiGoz_url %}<a href="kanser_disi_goz_hastaliklari">Kanser Dışı Göz Hastalıkları</a>{% endblock %}</li>
+                <li class="last">{% block articles_radyasyonOnkolojisi_url %}<a href="radyasyon_onkolojisi">Radyasyon Onkolojisi</a>{% endblock %}</li>
+            </ul>
+        </div>
     </div>
-
-    {% block article_content %}
-
-    {% endblock %}
 {% endblock %}
+
+{% block content %}{% endblock %}
+

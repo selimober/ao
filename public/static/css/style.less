@@ -1,5 +1,9 @@
 @import url("variables.less");
 
+/**********
+ * MIXINS *
+ **********/
+
 .rounded-corners (@radius: 5px) {
   border-radius: @radius;
   -webkit-border-radius: @radius;
@@ -18,9 +22,13 @@
     font-weight: 300;
 }
 
+/***********
+ * GENERAL *
+ ***********/
+
 div.container {
     width: @unit_pageWidth;
-    margin-left: 2em;
+    margin-left: @unit_containerMarginLeft;
     position: relative;
 }
 
@@ -29,7 +37,22 @@ div.container {
 }
 
 body {
-    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font: 1em/1.5em Geneva, Verdana, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+p {
+    color: @color_paragraph;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    color: @color_h1;
+    font-size: 1.5em;
+}
+h3 {
+    color: @color_h3;
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
 }
 
 ul.h_menu {
@@ -41,6 +64,10 @@ ul.h_menu {
     }
 
 }
+
+/************
+ * ELEMENTS *
+ ************/
 
 #header1 {
     background-color: @color_dark_bg;
@@ -146,6 +173,10 @@ ul.h_menu {
              }
         }
     }
+}
+
+#content {
+    padding-top: 2em;
 }
 
 #footer {
