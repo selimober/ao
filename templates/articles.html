@@ -4,15 +4,10 @@
     <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/articles.less">
 {% endblock %}
 
-{% block articles_url %}
-    <a href="kanser_genel_bilgi" class="active">KONULAR</a>
-{% endblock %}
-
-
 {% block submenuBlock %}
     <div id="subMenuBar">
         <div class="container">
-            <ul id="articles_menu" class="h_menu">
+            <ul id="submenu" class="h_menu">
                 <li>{% block articles_genelBilgi_url %}<a href="kanser_genel_bilgi">Kanser Genel Bilgi</a>{% endblock %}</li>
                 <li>{% block articles_taramaRehberi_url %}<a href="kanser_tarama_rehberi">Kanser Tarama Rehberi</a>{% endblock %}</li>
                 <li>{% block articles_memeKanseri_url %}<a href="meme_kanseri">Meme Kanseri</a>{% endblock %}</li>

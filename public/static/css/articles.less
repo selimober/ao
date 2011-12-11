@@ -1,8 +1,6 @@
 @import url("variables.less");
 
-h1 {
-    font-style: italic;
-}
+@import url("submenu.less");
 
 h3 {
     margin-left: @unit_containerMarginLeft * -1;
@@ -10,41 +8,6 @@ h3 {
     margin-bottom: 1em;
     margin-top: 1em;
     background: url("/static/img/bookmark.jpg") no-repeat 1.25em 0.3em;
-}
-
-#topMenuBar {
-    padding-bottom: 0 !important;
-    background: none !important;
-}
-
-#subMenuBar {
-    background-color: @color_dark_bg;
-}
-
-#articles_menu {
-    padding: 0.25em 0;
-
-    li {
-        border-right: 1px solid @color_light_fg;
-        margin: -5px;
-    }
-    
-    li.last {
-        border-right: none;
-    }
-
-    a {
-        padding: 0.25em 1.15em;
-        color: @color_light_fg;
-    }
-
-    a:hover {
-        color: @color_subMenuActive;
-    }
-
-    a.active {
-        color: @color_subMenuActive;
-    }
 }
 
 .left, .right {

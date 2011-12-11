@@ -23,7 +23,10 @@ class SSSView(TemplateView):
 
 def article(request, article_url):
     try:
-        resp = render(request, "articles/" + article_url + ".html")
+        if article_url:
+            resp = render(request, "articles/" + article_url + ".html")
+        else:
+            resp = render(request, "articles/kanser_genel_bilgi.html")
     except TemplateDoesNotExist :
         raise Http404
     return resp
