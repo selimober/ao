@@ -3,6 +3,16 @@
 h1 {
     margin-bottom: 1em !important;
 }
+
+.left {
+    float: left;
+    width: 390px;
+}
+
+.right {
+    margin-left: 390px;
+}
+
 #summaryBox {
 
     background-color: @color_dark_bg;
@@ -17,8 +27,6 @@ h1 {
     }
 
     .left {
-        width: 390px;
-        float: left;
 
         #imgContainer {
            margin-bottom: 1em;
@@ -40,10 +48,32 @@ h1 {
             margin-bottom: 0;
         }
     }
+}
 
-    .right {
-        margin-left: 390px;
+#detailBox {
+    padding: 2em 2em 2em 0;
+
+    span, p {
+        font-size: 0.80em;
     }
 
+    h3 {
+        font-size: 1em;
+        margin: 1em 0 0 0;
+    }
+    
+    
 
+    .left {
+        color: @color_paragraph;
+    }
+
+    .right {
+        padding-left: 2em;
+
+        h3.first {
+            margin-bottom: 1em;
+        }
+    }
 }
+
