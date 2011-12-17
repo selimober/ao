@@ -1,0 +1,44 @@
+@import url("variables.less");
+
+body #content {
+}
+
+#content {
+
+    .container {
+        margin: 0;
+        width: @unit_fullPageWidth;
+    }
+
+    h1 {
+        font-size: 1.25em;
+        font-style: italic;
+        padding-left: 1em;
+        margin-left: -1em;
+        margin-bottom: 0.5em;
+        color: #373737;
+        background: url("/static/img/bookmark.jpg") no-repeat 0.2em 0.2em;
+    }
+
+    p {
+        font-size: 0.75em;
+        color: #6a6a6a;
+    }
+    
+    p.first {
+        font-weight: bold;
+    }
+
+    .left, .right {
+    }
+
+    .left {
+        width: @unit_homePortraitWidth;
+        float: left;
+    }
+
+    .right {
+        margin-left: @unit_homePortraitWidth + 50px;
+    }
+
+}

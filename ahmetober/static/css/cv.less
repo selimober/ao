@@ -1,0 +1,80 @@
+@import url("variables.less");
+
+h1 {
+    margin-bottom: 1em !important;
+}
+
+.left {
+    float: left;
+    width: 390px;
+    margin-bottom: 1em;
+}
+
+.right {
+    margin-left: 390px;
+}
+
+#summaryBox {
+
+    background-color: @color_dark_bg;
+    padding: 2em;
+
+    div {
+        p, span {
+            color: @color_summaryBox_fg;
+            font-family: Georgia, serif;
+            font-style: italic;
+        }
+    }
+
+    .left {
+
+        #imgContainer {
+           margin-bottom: 1em;
+        }
+
+        p {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        p#summaryBoxTitle {
+            margin-bottom: 10px;
+            text-decoration: underline;
+            font-weight: bold;
+
+        }
+        span.summaryBoxLabel {
+            display: inline-block;
+            width: 135px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+#detailBox {
+    padding: 2em 2em 2em 0;
+
+    span, p {
+        font-size: 0.80em;
+    }
+
+    h3 {
+        font-size: 1em;
+        margin: 1em 0 0 0;
+    }
+    
+    
+
+    .left {
+        color: @color_paragraph;
+    }
+
+    .right {
+        padding-left: 2em;
+
+        h3.first {
+            margin-bottom: 1em;
+        }
+    }
+}
+

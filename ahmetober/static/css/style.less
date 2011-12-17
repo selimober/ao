@@ -1,0 +1,247 @@
+@import url("variables.less");
+
+
+/***********
+ * GENERAL *
+ ***********/
+
+div.container {
+    width: @unit_pageWidth;
+    margin-left: @unit_containerMarginLeft;
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    font: 1em/1.375em Geneva, Verdana, "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+p {
+    color: @color_paragraph;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: @color_h1;
+    font-size: 1.5em;
+    font-style: italic;
+}
+h3 {
+    color: @color_h3;
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+ul.h_menu {
+    list-style: none;
+
+    li {
+        display: inline;
+        list-style: none;
+    }
+
+}
+
+/************
+ * ELEMENTS *
+ ************/
+
+#header1 {
+    background-color: @color_dark_bg;
+    height: 4em;
+    color: @color_light_fg;
+
+    span {
+        position: relative;
+        top: 1.75em;
+        font-size: 0.75em;
+    }
+
+    .reddot {
+        background: url("/static/img/reddot.gif") no-repeat 0 center;
+        margin-left: 1em;
+        padding-left: 0.75em;
+        float: right;
+    }
+}
+
+#header2 {
+    background-color: @color_light_bg;
+    border-bottom: 1px solid @color_header2_bottomborder;
+    height: 6em;
+
+    #nameBox {
+        position: absolute;
+        top: 2.5em;
+        color: @color_h1;
+
+        span#title {
+            .menu_font(italic);
+            font-size: 1em;
+        }
+
+        span#name {
+            .menu_font(normal);
+            font-size: 2em;
+        }
+    }
+
+    #sizeChangerBox {
+        color: @color_fontSizeChanger;
+        padding: 0.2em;
+        background-color: white;
+        position: absolute;
+        top: 3em;
+        right: 0em;
+        border: 1px solid @color_header2_bottomborder;
+        .rounded-corners(2px);
+
+        span {
+            cursor: pointer;
+        }
+
+        .smallText {
+            font-size: 0.5em;
+        }
+
+        .mediumText {
+            font-size: 1em;
+        }
+
+        .largeText {
+            font-size: 1.5em;
+        }
+    }
+}
+
+#topMenuBar {
+    background: url("/static/img/topmenu_bottom.jpg") repeat-x bottom;
+    .menu_font;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: -16px;
+    }
+
+    #top_menu {
+        padding: 0.9em 0 1.1em 0;
+        position: relative;
+        left: -0.5em;
+
+        li {
+            padding-bottom: 1.15em;
+
+            a {
+                padding: 1em 0.5em;
+                color: @color_topmenu_unactive;
+            }
+            
+            a:hover {
+                background-color: @color_dark_bg;
+                color: @color_light_fg;
+            }
+            
+            a.active {
+                color: @color_light_fg;
+                background-color: @color_dark_bg;
+            }
+        }
+        
+        li.active {
+            background: url("/static/img/topmenu_arrow.gif") no-repeat center bottom;
+        }
+    }
+}
+
+#content {
+    padding-top: 2em;
+}
+
+#footer {
+    clear: both;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-top: 1em;
+    background-color: @color_dark_bg;
+    .menu_font;
+    height: 2em;
+    
+    span, a {
+        letter-spacing: 0;
+        font-size: 0.75em;
+        color: @color_bottommenu_fg;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    #bottomMenuBar {
+
+        .container {
+            text-align: right;
+        }
+
+
+        #bottom_menu {
+            padding-bottom: 0.5em;
+            text-align: right;
+
+            li {
+
+                a {
+                    padding: 0.5em 0.5em;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/***************
+ * D I S Q U S *
+ ***************/
+#disqus_thread {
+    width: 40em;
+    position: relative;
+}
+
+#dsq-account-dropdown {
+    display: none;
+}
+
+#dsq-global-toolbar {
+    position: absolute;
+    left: 35.2em;
+    top: -1em;
+}
+
+#dsq-subscribe {
+    display: none;
+}
+
+#dsq-sort-by {
+    display: none;
+}
+
+.dsq-brlink {
+    color: @color_paragraph;
+}
+ .dsq-global-toolbar-left {
+    display: none;
+ }
+
+ .dsq-community-box {
+    display: none;
+ }

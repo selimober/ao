@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block pagecss %}
+    <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/sorular.less">
+{% endblock %}
+
+{% block sorular_url %}
+    <li class="active"><a href="/sorular" class="active">SORULAR</a></li>
+{% endblock %}
+
+
+{% block submenuBlock %}
+    <div id="subMenuBar">
+        <div class="container">
+            <ul class="submenu h_menu">
+                <li><a class="first" href="#radyoterapi_sac_doker_mi">Radyoterapi saç döker mi?</a></li>
+                <li><a href="#radyoterapi_kisirlik_yapar_mi">Radyoterapi kısırlık yapar mı?</a></li>
+                <li><a href="#kanserli_hasta_seker_yiyebilir_mi">Kanserli hasta şeker yiyebilir mi?</a></li>
+            </ul>
+            <ul class="submenu h_menu">
+                <li><a class="first" href="#kanser_tedavisi_sirasinda_kilo_almak_mi_gerekir">Kanser tedavisi sırasında kilo almak mı gerekir?</a></li>
+                <li><a href="#kanserden_korunmak_icin_nasil_beslenelim">Kanserden korunmak için nasıl beslenelim?</a></li>
+            </ul>
+            <ul class="submenu h_menu">
+                <li><a class="first" href="#alternatif_tıp_yontemleri_yarali_midir">Alternatif tıp yöntemleri yaralı mıdır?</a></li>
+                <li><a href="#kanser_bulasici_midir">Kanser bulaşıcı mıdır?</a></li>
+                <li><a href="#meme_kanseri_karşı_memeye_sicrar_mi">Meme kanseri karşı memeye sıçrar mı?</a></li>
+            </ul>
+            <ul class="submenu h_menu">
+                <li><a class="first" href="#kanserli_hasta_ameliyat_edilirse_hastalik_yayilir_mi">Kanserli hasta ameliyat edilirse hastalık yayılır mı?</a></li>
+                <li><a href="#kanser_kalitimla_gecer_mi">Kanser kalıtımla geçer mi?</a></li>
+                <li class="last"><a href="#her_kanser_olumcul_mudur">Her kanser ölümcül müdür?</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h3 id="radyoterapi_sac_doker_mi">Radyoterapi saç döker mi?</h3>
+
+    <p>Saçlı deriye ışın verilmedikçe radyoterapi saç dökmez. Eğer beyin tedavi edilecekse saçlı deri ışın alacağı için saçlar dökülür.
+        Verilen doza bağlı olarak saçlar daha sonra çıkabilir veya seyrek olarak daha zayıf çıkabilir. Tedavi dozu yüksekse veya yoğun
+        tedavi alan bölgeler varsa saçlar bu bölgede kalıcı olarak dökülür.</p>
+
+    <h3 id="radyoterapi_kisirlik_yapar_mi">Radyoterapi kısırlık yapar mı?</h3>
+
+    <p>Kadında yumurtalıklar, erkekte testisler ışınlanmadıkça radyoterapi kısırlık yapmaz.</p>
+
+    <h3 id="kanserli_hasta_seker_yiyebilir_mi">Kanserli hasta şeker yiyebilir mi?</h3>
+
+    <p>Şekerin kanserli hastaya zararlı olduğu düşüncesi, hücre kültürleri ile yapılan sınırlı laboratuar deneylerine dayanmaktadır.
+        İnsanda durum oldukça farklıdır. Şeker dokulara ve kanser hücrelerine kan ile taşınır. Şeker alındığı zaman vücut bunu kullanır.
+        Fazlası şeker olarak depolanır, daha fazlası yağa dönüşür. Kanda şeker düştüğü zaman, yani aç kaldığımızda ilk önce şeker depoları
+        kullanılır. Daha sonra yağ yakılarak şekere dönüştürülür ve kullanılır. Hiç şeker almayan kişide vücut en kolay, yenen
+        karbonhidratları, yani unu nişastayı, ve yağı şekere dönüştürerek kandaki şeker düzeyini normale getirir. Anlatmaya çalıştığım gibi
+        insan şeker yese de yemese de vücut kandaki şeker miktarını dengede tutar. Onun için kanserli hasta şeker yediğinde bunun kanserli
+        hücrelere gideceği ve kanseri besleyeceği söylemi doğru değildir.</p>
+    <p>Diğer taraftan aşırı kilo bazı kanser türlerinin sebepleri arasındadır. Bilinen hastalığı olmayan kişi, genel sağlık açısından
+        kilosunu dengede tutmak zorundadır. Bu aynen kanserli hastada da geçerlidir. Fazla kilo herkes için zararlıdır.</p>
+
+    <h3 id="kanser_tedavisi_sirasinda_kilo_almak_mi_gerekir">Kanser tedavisi sırasında kilo almak mı gerekir?</h3>
+
+    <p>Halk arasında zayıflamaya başlamak hastalık başlangıcı olarak algılanmakta ve hasta kişide kilo kaybı endişe yaratmaktadır. Kanser
+        tedavisi gören kişide çeşitli sebeplerle iştah azalabilir. Tedavi boyunca hasta yeterli besin almalıdır. Bunun en basit göstergesi
+        tartıdır. Hasta şişman değilse kilo kaybetmemelidir. Şişmansa veya hafif kilolu ise biraz zayıflamasından endişe etmemek gerekir.
+        Tedavi sırasında normal beslenme alışkanlığını sürdürmek, iştah azaldıysa, kendini bilinçli olarak, alışılmış ölçülerde yemeğe
+        zorlamak en geçerli yoldur.</p>
+
+    <h3 id="kanserden_korunmak_icin_nasil_beslenelim">Kanserden korunmak için nasıl beslenelim?</h3>
+
+    <p>Kanserle beslenme arasındaki ilişki sonra yıllarda devamlı gündemdedir. Bu konuda çok özel bilgilere ihiyaç yoktur. Aşırı kilo ile
+        kanser arasındaki ilişki en net bilgilerden biridir. Fazla kilo hem bazı kanser türlerinin sebepleri arasındadır, hem de kansere
+        yakalanmış kişilerde ölüm oranını arttıran faktörler arasındadır. Sindirim sistemi, meme, prostat, pankreas, rahim kanserleri kilo
+        ile doğrudan ilişkilidir. Kilonuzu arttıran ne varsa bunlardan kaçınmanız, kilo yapmayan ne varsa bunlara yönelmeniz gerekir. Bu
+        basit fomülü uyguladınız zaman üzerinize düşeni hem kanser hem de kalp ve damar hastalıkları açısından yapmış olursunuz. Biraz daha
+        detaya girersek, yağ, şeker, un ve nişastayı azaltın. Tokluk hissi için sebze ve meyveyi arttırın. Yaşınıza uygun olarak kırmızı eti
+        sınırlayın. Bunları yaptığınız zaman hem bilinen zararlardan korunur hem de vücudunuz için yararlı vitamin, mineral, antioksidan
+        maddeleri doğal yoldan alırsınız. Sebze, meyve ile aldığınız lifli besin ayrıca sindirim sistemi için gösterilmiş koruyucu etkiyi
+        sağlıyacaktır. Hayvansal besinleri ölçülü alıyorsanız, kilonuz yaşınıza ve boyunuza göre tıbbi sağlıklı ölçüler içindeyse, günde
+        toplam 5 porsiyon salata, sebze veya meyve yiyorsanız, yaşınıza uygun egzersiz yapıyorsanız, siz hem kanser hem de genel sağlığınız
+        için üzerinize düşeni yapıyorsunuz. Hangi meyve veya sebze çeşidinde neyin fazla olduğu ya da daha yaralı olduğuna fazla dikkatin
+        çok faydası olmadığını da bilin. Daha fazlası akla yorgunluk verir.</p>
+
+    <h3 id="alternatif_tıp_yontemleri_yarali_midir">Alternatif tıp yöntemleri yaralı mıdır?</h3>
+
+    <p>Tıbbın metodolojisi vardır. Metodolojisi ve yöntemleri tanımlandığı için de bilimdir. Bu kurallara uyulmadan sunulan veriler tıp
+        bilgisi olarak kabul edilmez. Bir ilaç veya yöntem geliştirilirken çeşitli evrelerden geçer. Önce laboratuar çalışmaları ve
+        deneyleri, sonra hayvan deneyleri daha sonra insanlar üzerinde zarar ve doz araştırmaları, daha sonra hangi tür kanser tipi için
+        geliştirilmişse yarar araştırmaları yapılır. Zararı olmadığı ve yararı gösterildiği zaman tıbbın genel kullanımına açılır. Yani ürün
+        olarak piyasaya sürülür. Genel kullanıma açılan ilaç daha sonra birbirine eş olan hasta guruplarında kıyaslamalı çalışmalarla
+        sınanır. Yani etkinliği ve yarar oranı bilinen tedavilerle bilimsel yöntemlerle araştırılmaya devam eder.</p>
+    <p>Laboratuar çalışmaları ile başlayan araştırmaların ürün olarak kullanıma sürülmesi için geçen süre 10-15 yıldır. Laboratuar
+        çalışması ile başlayan araştırmaların %2-5 i ilaca dönüşür. Aldığımız ilaçlar sonuçta bu konuda iyi yetişmiş ve üst eğitimli çeşitli
+        dallardan kişilerin çalışmasına rağmen 10-15 yılda %2-5 verimle ortaya çıkar.</p>
+    <p>İlaçların kullanımında doz çok önemlidir. Bu nedenle aldığınız her ürün içinde belli yoğunlukta etken madde içerir, ayrıca mikrop ve
+        diğer kimyasal maddelerden temizlenmiştir.</p>
+    <p>Kişilerin yarar iddia ederek sundukları çeşitli maddelerin hiçbiri bu aşamalardan ve testlerden geçmez. İçinde ne olduğunu bilmek
+        çoğunlukla mümkün değildir. Saflığı ve yoğunluğu hiçbir ölçüye vurulamaz. Bildiğimiz ve günlük kullanımımızda olan maddelerin ilaç
+        eşdeğeri olarak sunulması ise zaten inandırıcı değildir. Çağdaş tıp bu yöntemlerden yüzyıllar içinde geçmiş ve bugünkü tarifine
+        ulaşmıştır. Birçok ilaç hala bitkisel kökenli olarak, etkinliği arttırılmış ve dozu belirlenmiş şekilde, çağdaş ilaçların ana
+        maddesidir.</p>
+    <p>Doktorların halk arasında tavsiye edilen şeylere karşı çıkmasının sebebi bunların zararlı da olabileceği ve faydasının bilimsel
+        yöntemlerle gösterilmemesine dayanır. Alternatif tıp olarak sunulan maddeler, karışımlar bu sebeple çağdaş tıbbın dışındadır.</p>
+
+    <h3 id="kanser_bulasici_midir">Kanser bulaşıcı mıdır?</h3>
+
+    <p>Kanser bulaşıcı bir hastalık değildir. Bazı kanser türlerinin oluşmasında virüsler rol oynar ancak bu hastalığın doğrudan bulaşıcı
+        olacağı anlamına gelmez. Çocuk büyük herkesin kanserli hastayla genel sağlık kuralları içinde temas etmesinde sakınca yoktur.</p>
+
+    <h3 id="meme_kanseri_karşı_memeye_sicrar_mi">Meme kanseri karşı memeye sıçrar mı?</h3>
+
+    <p>Meme kanseri karşı memede aynı anda veya ileriki yıllarda ortaya çıkabilir. Basit anlatımla karşı meme ayrı bir organdır ve o da
+        kanser yapabilir. Cinsi daha önceki kanserle aynı veya değişiktir. Bu bir sıçrama değildir.</p>
+
+    <h3 id="kanserli_hasta_ameliyat_edilirse_hastalik_yayilir_mi">Kanserli hasta ameliyat edilirse hastalık yayılır mı?</h3>
+
+    <p>Halk arasında kansere bıçak vurulunca yayılır şeklinde bir inanç vardır. hiçbir şekilde doğru değildir. Ancak cerrahi karar hastanın
+        durumuna ve kanserin türüne göre verilir. Her hasta cerrahi için uygun değildir. Gerekli olduğu zaman cerrahiden hiçbir zaman
+        kaçınılmaz. Uygun hastada en etkin yöntemdir.</p>
+
+    <h3 id="kanser_kalitimla_gecer_mi">Kanser kalıtımla geçer mi?</h3>
+
+    <p>Genetik yolla geçen kanser türleri vardır. Sık rastlanan kanserlerden meme, kalın barsak ve kadın yumurtalık kanserlerinde genetik
+        geçiş bilinmektedir. Ancak bu hiçbir zaman anne veya babası bu kansere sahip olan kişilerde mutlaka kanser çıkacağı anlamına gelmez.
+        Doktorlar kanserli hastayı bu yönde de değerlendirir ve çocukları, yakın kan bağı olanlarla ilgili alınacak tedbirler için gerekli
+        bilgileri aktarırlar. Meme, kalın barsak ve yumurtalık kanserli hastaların ancak bir kısmı genetik geçiş taşır. Tüm olgular bu
+        tanımda değildir.</p>
+
+    <h3 id="her_kanser_olumcul_mudur">Her kanser ölümcül müdür?</h3>
+
+    <p>Kanserler türlerine göre yaşam beklentisi açısından çok farklılıklar gösterir. Bu nedenle şifa oranı da değişkendir. Ayrıca ölüm
+        oranı yüksek kanserlerde dahi hastalığın yaygınlığına göre gidiş farklıdır. Soruya genel cevap vermek gerekirse kanserli hasta
+        mutlaka kanserden ölmez.</p>
+
+{% endblock %}
+
+{% block disqus %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'ahmetober'; // required: replace example with your forum shortname
+        var disqus_developer = 1;
+        var disqus_identifier = 'sorular';
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+{% endblock %}
+

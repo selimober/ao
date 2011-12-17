@@ -3,7 +3,8 @@ from django.conf.urls.defaults import patterns, url
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
-from ahmetober.views import IndexView, ContactView, SSSView, ArticlesView, CVView, TodoView
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from ahmetober.views import IndexView, ContactView, SorularView, CVView, TodoView
 from settings import DEBUG
 
 urlpatterns = patterns('',
@@ -17,17 +18,18 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     url(r'^$', IndexView.as_view()),
-    url(r'^articles$', ArticlesView.as_view()),
-    url(r'^sss$', SSSView.as_view()),
+    url(r'^sorular$', SorularView.as_view()),
     url(r'^cv$', CVView.as_view()),
-    url(r'^contact$', ContactView.as_view()),
+    url(r'^iletisim', ContactView.as_view()),
     url(r'^todo$', TodoView.as_view()),
-    url(r'^articles/(.*)', 'ahmetober.views.article'),
+    url(r'^konular/?(.*)', 'ahmetober.views.article'),
 )
 
-if DEBUG:
-    urlpatterns += patterns('', (
-        r'^static/(?P<path>.*)$',
-        'django.views.static.serve',
-        {'document_root': 'static'}
-    ))
+urlpatterns += staticfiles_urlpatterns()
+#if DEBUG:
+#
+#    urlpatterns += patterns('', (
+#        r'^static/(?P<path>.*)$',
+#        'django.views.static.serve',
+#        {'document_root': 'static'}
+#    ))

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block pagecss %}
+    <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/konular.less">
+{% endblock %}
+
+{% block konular_url %}
+    <li class="active"><a href="/konular/kanser_genel_bilgi" class="active">KONULAR</a></li>
+{% endblock %}
+
+{% block submenuBlock %}
+    <div id="subMenuBar">
+        <div class="container">
+            <ul class="submenu h_menu first">
+                <li>{% block konular_genelBilgi_url %}<a class="first" href="/konular/kanser_genel_bilgi">Kanser Genel Bilgi</a>{% endblock %}</li>
+                <li>{% block konular_taramaRehberi_url %}<a href="/konular/kanser_tarama_rehberi">Kanser Tarama Rehberi</a>{% endblock %}</li>
+                <li>{% block konular_memeKanseri_url %}<a href="/konular/meme_kanseri">Meme Kanseri</a>{% endblock %}</li>
+                <li>{% block konular_akcigerKanseri_url %}<a href="/konular/akciger_kanseri">Akciğer Kanseri</a>{% endblock %}</li>
+            </ul>
+            <ul class="submenu h_menu">
+                <li>{% block konular_kanserDisiGoz_url %}<a class="first" href="/konular/kanser_disi_goz_hastaliklari">Kanser Dışı Göz
+                    Hastalıkları</a>{% endblock %}</li>
+                <li class="last">{% block konular_radyasyonOnkolojisi_url %}<a href="/konular/radyasyon_onkolojisi">Radyasyon
+                    Onkolojisi</a>{% endblock %}</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block disqus %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'ahmetober'; // required: replace example with your forum shortname
+        var disqus_developer = 1;
+        {% block disqus_identifier %}{% endblock %}
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+{% endblock %}

@@ -22,10 +22,13 @@
         _gaq.push(['_setDomainName', 'ahmetober.com']);
         _gaq.push(['_trackPageview']);
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
         })();
 
     </script>
@@ -42,27 +45,29 @@
 <div id="header2">
     <div class="container">
         <div id="nameBox">
+            <!-- <img src="{{ STATIC_URL }}img/title01.png" alt="Prof.Dr. Ahmet ÖBER" width="288" height="30"/> -->
             <span id="title">PROF. DR.</span>
             <span id="name">AHMET ÖBER</span>
         </div>
         <div id="sizeChangerBox">
-            <span class="smallText textSizeChanger">A</span>
-            <span class="mediumText textSizeChanger">A</span>
-            <span class="largeText textSizeChanger">A</span>
+            <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i < p.length; i++) {p[i].style.fontSize = '75%';p[i].style.lineHeight = '1.375em'}" class="smallText textSizeChanger">A</span>
+            <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i < p.length; i++) {p[i].style.fontSize = '100%';p[i].style.lineHeight = '1.375em'}" class="mediumText textSizeChanger">A</span>
+            <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i < p.length; i++) {p[i].style.fontSize = '125%';p[i].style.lineHeight = '1.5em'}" class="largeText textSizeChanger">A</span>
         </div>
     </div>
 </div>
 
 <div id="topMenuBar">
     <img src="{{ STATIC_URL }}img/pulse.jpg" width="132" height="24" alt="pulse"/>
+
     <div class="container">
         <ul id="top_menu" class="h_menu">
-            <li>{% block home_url %}<a href="/">ANA SAYFA</a>{% endblock %}</li>
-            <li>{% block articles_url %}<a href="articles/kanser_genel_bilgi">KONULAR</a>{% endblock %}</li>
-            <li>{% block cv_url %}<a href="/cv">ÖZGEÇMİŞ</a>{% endblock %}</li>
-            <li>{% block sss_url %}<a href="/sss">SORULAR</a>{% endblock %}</li>
-            <li>{% block contact_url %}<a href="/contact">İLETİŞİM</a>{% endblock %}</li>
-            <li><a href="/todo">TODO</a> </li>
+            {% block home_url %}<li><a href="/">ANA SAYFA</a></li>{% endblock %}
+            {% block konular_url %}<li><a href="/konular/kanser_genel_bilgi">KONULAR</a></li>{% endblock %}
+            {% block cv_url %}<li><a href="/cv">ÖZGEÇMİŞ</a></li>{% endblock %}
+            {% block sorular_url %}<li><a href="/sorular">SORULAR</a></li>{% endblock %}
+            {% block iletisim_url %}<li><a href="/iletisim">İLETİŞİM</a></li>{% endblock %}
+            <a href="/todo">TODO</a></li>
         </ul>
     </div>
 </div>
@@ -78,21 +83,19 @@
 </div>
 
 <div id="footer">
-    <div id="bottomMenuBar">
-        <div class="container">
+    <div class="container">
+        <div class="left">
+            <span>Copyright @ 2011 Ahmet Öber | Tüm hakları saklıdır.</span>
+        </div>
+        <div id="bottomMenuBar" class="right">
             <ul id="bottom_menu" class="h_menu">
                 <li><a href="/">Ana Sayfa</a></li>
-                <li><a href="/articles">Konular</a></li>
-                <li><a href="/cv">ÖZGEÇMİŞ</a></li>
-                <li><a href="/sss">SORULAR</a></li>
-                <li><a href="/contact">İletişim</a></li>
+                <li><a href="/konular/kanser_genel_bilgi">Konular</a></li>
+                <li><a href="/cv">Özgeçmiş</a></li>
+                <li><a href="/sorular">Sorular</a></li>
+                <li><a href="/iletisim">İletişim</a></li>
             </ul>
         </div>
-    </div>
-    <div class="container">
-        <p class="text-center">Copyright @ 2011 Ahmet Öber</p>
-
-        <p class="text-center">Tüm hakları saklıdır.</p>
     </div>
 </div>
 </body>
