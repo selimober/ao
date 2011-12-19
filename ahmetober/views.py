@@ -18,6 +18,12 @@ class TodoView(TemplateView):
 class SorularView(TemplateView):
     template_name = "sorular.html"
 
+class SEOView(TemplateView):
+    template_name = "sitemap.xml"
+
+class RobotView(TemplateView):
+    template_name = "robots.txt"
+
 def article(request, article_url):
     try:
         if article_url:

@@ -4,7 +4,7 @@ from django.conf.urls.defaults import patterns, url
 # from django.contrib import admin
 # admin.autodiscover()
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from ahmetober.views import IndexView, ContactView, SorularView, CVView, TodoView
+from ahmetober.views import IndexView, ContactView, SorularView, CVView, TodoView, SEOView, RobotView
 from settings import DEBUG
 
 urlpatterns = patterns('',
@@ -23,6 +23,8 @@ urlpatterns = patterns('',
     url(r'^iletisim', ContactView.as_view()),
     url(r'^todo$', TodoView.as_view()),
     url(r'^konular/?(.*)', 'ahmetober.views.article'),
+    url(r'^sitemap\.xml$', SEOView.as_view()),
+    url(r'^robots\.txt$', RobotView.as_view()),
 )
 
 urlpatterns += staticfiles_urlpatterns()
