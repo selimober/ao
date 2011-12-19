@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block pagecss %}
-    <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/konular.less">
+    <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/konular.less" />
 {% endblock %}
 
 {% block konular_url %}
@@ -28,13 +28,14 @@
 {% endblock %}
 
 {% block content %}{% endblock %}
-
+<!--
 {% block disqus %}
+    <div class="seperator"><img src="{{ STATIC_URL }}img/seperator.png" alt="seperator" width="920" height="2" /></div>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'ahmetober'; // required: replace example with your forum shortname
-        var disqus_developer = 1;
+        var disqus_developer = 0;
         {% block disqus_identifier %}{% endblock %}
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function () {

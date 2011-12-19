@@ -133,14 +133,14 @@ strong {
 }
 
 img {
-  color: transparent;
+  /*color: transparent;*/
   font-size: 0;
   vertical-align: middle;
 /*
   For IE.
   http://css-tricks.com/ie-fix-bicubic-scaling-for-images
 */
-  -ms-interpolation-mode: bicubic;
+  /*-ms-interpolation-mode: bicubic;*/
 }
 
 li {

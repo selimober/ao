@@ -15,12 +15,36 @@ div.container {
     text-align: center;
 }
 
+
+
+
+
+#subMenuBar {
+
+    .sticky.container {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+    }
+
+    .container {
+        background-color: @color_dark_bg;
+        -moz-box-shadow: -5px 5px 5px @color_dark_bg;
+        -webkit-box-shadow: -5px 5px 5px @color_dark_bg;
+        box-shadow: -5px 5px 5px @color_dark_bg;
+        width: 100%;
+
+        margin-left: 0;
+        padding-left: 2em;
+    }
+}
+
 body {
     font: 1em/1.375em Geneva, Verdana, "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 p {
-    color: @color_paragraph;
+    color: @color_h1;
     margin-bottom: 1em;
 }
 
@@ -30,7 +54,7 @@ h1 {
     font-style: italic;
 }
 h3 {
-    color: @color_h3;
+    color: @color_h1;
     font-size: 1.25em;
     margin-bottom: 0.5em;
 }
@@ -51,13 +75,14 @@ ul.h_menu {
 
 #header1 {
     background-color: @color_dark_bg;
-    height: 4em;
+    height: 3em;
     color: @color_light_fg;
 
     span {
         position: relative;
-        top: 1.75em;
+        top: 1em;
         font-size: 0.75em;
+		font-weight: bold;
     }
 
     .reddot {
@@ -65,6 +90,7 @@ ul.h_menu {
         margin-left: 1em;
         padding-left: 0.75em;
         float: right;
+        display: none;
     }
 }
 
@@ -159,6 +185,12 @@ ul.h_menu {
 
 #content {
     padding-top: 2em;
+
+    ul {
+        margin-left: 2em;
+        margin-bottom: 1em;
+        color: @color_h1;
+    }
 }
 
 #footer {
@@ -209,6 +241,15 @@ ul.h_menu {
     }
 }
 
+#validators {
+    padding: 0.5em 0 0.5em 2em;
+
+    a {
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
 /***************
  * D I S Q U S *
  ***************/
@@ -225,6 +266,7 @@ ul.h_menu {
     position: absolute;
     left: 35.2em;
     top: -1em;
+    z-index: 10;
 }
 
 #dsq-subscribe {
@@ -244,4 +286,13 @@ ul.h_menu {
 
  .dsq-community-box {
     display: none;
+ }
+
+ .seperator {
+    padding-bottom: 1em;
+    padding-top: 1em;
+ }
+
+ #dsq-toolbar-dropdown-wrap ul {
+    width: 123px !important;
  }

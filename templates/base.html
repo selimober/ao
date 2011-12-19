@@ -3,11 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="google-site-verification" content="-JOqgav5RUX-txCF2UUX_xDpqj3KSgddthbbg-oa28Q" />
     <title>Prof. Dr. Ahmet Öber | Onkolog</title>
     <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/reset.css"/>
-    <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/style.less">
+    <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/style.less" />
     {% block pagecss %}{% endblock %}
     {% block subpagecss %}{% endblock %}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}waypoints.min.js"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}less-1.1.5.min.js"></script>
     <!--
     <script type="text/javascript" src="http://use.typekit.com/kud1hrj.js"></script>
@@ -50,9 +53,12 @@
             <span id="name">AHMET ÖBER</span>
         </div>
         <div id="sizeChangerBox">
-            <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i < p.length; i++) {p[i].style.fontSize = '75%';p[i].style.lineHeight = '1.375em'}" class="smallText textSizeChanger">A</span>
-            <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i < p.length; i++) {p[i].style.fontSize = '100%';p[i].style.lineHeight = '1.375em'}" class="mediumText textSizeChanger">A</span>
-            <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i < p.length; i++) {p[i].style.fontSize = '125%';p[i].style.lineHeight = '1.5em'}" class="largeText textSizeChanger">A</span>
+            <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i &lt; p.length; i++) {p[i].style.fontSize = '75%';p[i].style.lineHeight = '1.375em'}"
+                  class="smallText textSizeChanger">A</span>
+            <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i &lt; p.length; i++) {p[i].style.fontSize = '100%';p[i].style.lineHeight = '1.375em'}"
+                  class="mediumText textSizeChanger">A</span>
+            <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i &lt; p.length; i++) {p[i].style.fontSize = '125%';p[i].style.lineHeight = '1.5em'}"
+                  class="largeText textSizeChanger">A</span>
         </div>
     </div>
 </div>
@@ -62,12 +68,16 @@
 
     <div class="container">
         <ul id="top_menu" class="h_menu">
-            {% block home_url %}<li><a href="/">ANA SAYFA</a></li>{% endblock %}
-            {% block konular_url %}<li><a href="/konular/kanser_genel_bilgi">KONULAR</a></li>{% endblock %}
-            {% block cv_url %}<li><a href="/cv">ÖZGEÇMİŞ</a></li>{% endblock %}
-            {% block sorular_url %}<li><a href="/sorular">SORULAR</a></li>{% endblock %}
-            {% block iletisim_url %}<li><a href="/iletisim">İLETİŞİM</a></li>{% endblock %}
-            <a href="/todo">TODO</a></li>
+            {% block home_url %}
+                <li><a href="/">ANA SAYFA</a></li>{% endblock %}
+            {% block konular_url %}
+                <li><a href="/konular/kanser_genel_bilgi">KONULAR</a></li>{% endblock %}
+            {% block cv_url %}
+                <li><a href="/cv">ÖZGEÇMİŞ</a></li>{% endblock %}
+            {% block sorular_url %}
+                <li><a href="/sorular">SORULAR</a></li>{% endblock %}
+            {% block iletisim_url %}
+                <li><a href="/iletisim">İLETİŞİM</a></li>{% endblock %}
         </ul>
     </div>
 </div>
@@ -78,7 +88,7 @@
 <div id="content">
     <div class="container">
         {% block content %}{% endblock %}
-        {% block disqus %}{% endblock %}
+        <!--{% block disqus %}{% endblock %}-->
     </div>
 </div>
 
@@ -98,5 +108,42 @@
         </div>
     </div>
 </div>
+<div id="validators">
+    <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img src="{{ STATIC_URL }}img/w3cHtml.png" width="56" height="20" alt="Valid XHTML 1.0 Transitional" />
+    </a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <img src="{{ STATIC_URL }}img/w3cCss.png" width="56" height="20" alt="Valid CSS!" />
+    </a>
+</div>
+<script type="text/javascript">
+
+    var $waypoint = $('#subMenuBar');
+    $.waypoints.settings.scrollThrottle = 30;
+    $(document).ready(function () {
+        $waypoint.waypoint(function (event, direction) {
+            $waypoint.find('.container').toggleClass('sticky', direction === 'down');
+            event.stopPropagation();
+        });
+    });
+
+
+    // Smooth scrolling for internal links
+    $("a[href^='#']").click(function (event) {
+        event.preventDefault();
+
+        var $this = $(this),
+                target = this.hash,
+                $target = $(target);
+        var targetId = $target.attr('id');
+        $target.attr('id', '');
+        $('html, body').stop().animate({
+            'scrollTop':$target.offset().top - 100
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+        });
+        setTimeout(function() {$target.attr('id', targetId);}, 600);
+    });
+</script>
 </body>
 </html>

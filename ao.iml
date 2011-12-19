@@ -15,6 +15,7 @@
     <orderEntry type="jdk" jdkName="Python 2.7.2 (D:/dev/Python27/python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="kud1hrj" level="application" />
+    <orderEntry type="library" name="jquery.min" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="templateLanguage" value="Django" />
