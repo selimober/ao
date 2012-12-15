@@ -8,52 +8,52 @@
 
     <url>
         <loc>http://www.ahmetober.com/</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>http://www.ahmetober.com/konular/kanser_genel_bilgi</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>http://www.ahmetober.com/cv</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.50</priority>
     </url>
     <url>
         <loc>http://www.ahmetober.com/sorular</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.50</priority>
     </url>
     <url>
         <loc>http://www.ahmetober.com/iletisim</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.50</priority>
     </url>
     <url>
         <loc>http://www.ahmetober.com/konular/kanser_tarama_rehberi</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.70</priority>
     </url>
     <url>
         <loc>http://www.ahmetober.com/konular/meme_kanseri</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>http://www.ahmetober.com/konular/akciger_kanseri</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>http://www.ahmetober.com/konular/kanser_disi_goz_hastaliklari</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.64</priority>
     </url>
     <url>
         <loc>http://www.ahmetober.com/konular/radyasyon_onkolojisi</loc>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.64</priority>
     </url>
 </urlset>

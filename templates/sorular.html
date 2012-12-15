@@ -2,6 +2,8 @@
 
 {% block title_block %} | Sıkça Sorulan Sorular{% endblock %}
 
+{% block meta_description %}Kanser hakkında merak edilenler, sıkça sorulan sorular. Radyoterapi saç döker mi? Kısırlık yapar mı? Kanserli hasta şeker yiyebilir mi? Kanser tedavisi sırasında kilo almak gerekir mi? Kanserden korunmak için nasıl beslenelim? Alternatif tıp yöntemleri yaralı mıdır? Kanser bulaşıcı mıdır? Meme kanseri karşı memeye sıçrar mı? Kanserli hasta ameliyat edilirse hastalık yayılır mı? Kanser kalıtımla geçer mi? Her kanser ölümcül müdür? Radyoterapi alan hasta çevreye ışın yayar mi? Radyoterapi sonrası vücuttaki ışını boşaltmak için ne yapmak gerekir?{% endblock %}
+
 {% block pagecss %}
     <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/sorular.less" />
 {% endblock %}
@@ -35,6 +37,10 @@
                     yayılır mı?</a></li>
                 <li><a href="#kanser_kalitimla_gecer_mi">Kanser kalıtımla geçer mi?</a></li>
                 <li class="last"><a href="#her_kanser_olumcul_mudur">Her kanser ölümcül müdür?</a></li>
+            </ul>
+            <ul class="submenu h_menu">
+                <li><a class="first" href="#radyoterapi_alan_hasta_cevreye_isin_yayar_mi">Radyoterapi alan hasta çevreye ışın yayar mı?</a></li>
+                <li class="last"><a href="#radyoterapi_sonrasi_vucuttaki_isini_bosaltmak_icin_ne_yapmak_gerekir">Radyoterapi sonrası vücuttaki ışını boşaltmak için ne yapmak gerekir?</a></li>
             </ul>
         </div>
     </div>
@@ -155,27 +161,18 @@
         oranı yüksek kanserlerde dahi hastalığın yaygınlığına göre gidiş farklıdır. Soruya genel cevap vermek gerekirse kanserli hasta
         mutlaka kanserden ölmez.
     </p>
+    
+    <h3 id="radyoterapi_alan_hasta_cevreye_isin_yayar_mi">Radyoterapi alan hasta çevreye ışın yayar mı?</h3>
 
-{% endblock %}
+    <p>Radyoterapi yapılan hasta çevreye ışın yaymaz. Tedavi odasından çıktığı anda herkes gibidir. Hamilelerle, çocuklarla ve erişkinlerle temasında hiçbir sakınca, kısıtlama yoktur. Radyoterapiyi, nükleer tıp uygulamaları ile karıştırmamak gerekir.
+    </p>
+    
+    <h3 id="radyoterapi_sonrasi_vucuttaki_isini_bosaltmak_icin_ne_yapmak_gerekir">Radyoterapi sonrası vücuttaki ışını boşaltmak için ne yapmak gerekir?</h3>
 
-{% block disqus %}
-    <div class="seperator"><img src="{{ STATIC_URL }}img/seperator.png" alt="seperator" width="920" height="2" /></div>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'ahmetober'; // required: replace example with your forum shortname
-        var disqus_developer = 0;
-        var disqus_identifier = 'sorular';
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    <p>Radyoterapi sonrası vücutta ışın kalmaz. Etki tedavi anında, yani makina altında ışın verilirken hücrelerle ışının etkileşimi ile oluşur.
+        Işının vücutta kalması, depolanması söz konusu değildir. Halkın yarattığı hayal ürünü tavsiyeler kulaktan kulağa yayılmaktadır.
+        Tıbbi geçerliği yoktur.
+    </p>
+
 {% endblock %}
 

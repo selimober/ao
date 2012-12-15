@@ -4,6 +4,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="google-site-verification" content="-JOqgav5RUX-txCF2UUX_xDpqj3KSgddthbbg-oa28Q" />
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="msvalidate.01" content="DB208FA40BDA670ADFC0ABD75B0D9E17" />
     <title>Prof. Dr. Ahmet Öber{% block title_block %} | Onkolog{% endblock %}</title>
     <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/reset.css"/>
     <link rel="stylesheet/less" type="text/css" href="{{ STATIC_URL }}css/style.less" />
@@ -49,8 +51,10 @@
     <div class="container">
         <div id="nameBox">
             <!-- <img src="{{ STATIC_URL }}img/title01.png" alt="Prof.Dr. Ahmet ÖBER" width="288" height="30"/> -->
+            <a href="/">
             <span id="title">PROF. DR.</span>
             <span id="name">AHMET ÖBER</span>
+            </a>
         </div>
         <div id="sizeChangerBox">
             <span onclick="var p = document.getElementsByTagName('p'); for(var i = 0; i &lt; p.length; i++) {p[i].style.fontSize = '75%';p[i].style.lineHeight = '1.375em'}"
@@ -71,7 +75,7 @@
             {% block home_url %}
                 <li><a href="/">ANA SAYFA</a></li>{% endblock %}
             {% block konular_url %}
-                <li><a href="/konular/kanser_genel_bilgi">KONULAR</a></li>{% endblock %}
+                <li><a href="/konular/kanser_genel_bilgi">KANSER HAKKINDA</a></li>{% endblock %}
             {% block cv_url %}
                 <li><a href="/cv">ÖZGEÇMİŞ</a></li>{% endblock %}
             {% block sorular_url %}
@@ -88,7 +92,7 @@
 <div id="content">
     <div class="container">
         {% block content %}{% endblock %}
-        <!--{% block disqus %}{% endblock %}-->
+        {% block disqus %}{% endblock %}
     </div>
 </div>
 
@@ -100,7 +104,7 @@
         <div id="bottomMenuBar" class="right">
             <ul id="bottom_menu" class="h_menu">
                 <li><a href="/">Ana Sayfa</a></li>
-                <li><a href="/konular/kanser_genel_bilgi">Konular</a></li>
+                <li><a href="/konular/kanser_genel_bilgi">Kanser Hakkında</a></li>
                 <li><a href="/cv">Özgeçmiş</a></li>
                 <li><a href="/sorular">Sorular</a></li>
                 <li><a href="/iletisim">İletişim</a></li>
@@ -108,6 +112,7 @@
         </div>
     </div>
 </div>
+<!--
 <div id="validators">
     <a href="http://validator.w3.org/check?uri=referer" target="_blank">
         <img src="{{ STATIC_URL }}img/w3cHtml.png" width="56" height="20" alt="Valid XHTML 1.0 Transitional" />
@@ -116,6 +121,7 @@
         <img src="{{ STATIC_URL }}img/w3cCss.png" width="56" height="20" alt="Valid CSS!" />
     </a>
 </div>
+-->
 <script type="text/javascript">
 
     var $waypoint = $('#subMenuBar');

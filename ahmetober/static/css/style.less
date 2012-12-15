@@ -103,7 +103,21 @@ ul.h_menu {
         position: absolute;
         top: 2.5em;
         color: @color_h1;
+        
+        a {
+            color: @color_h1;
+        }
 
+        a:visited {
+            color: @color_h1;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: @color_h1;
+            text-decoration: none;
+        }
+        
         span#title {
             .menu_font(italic);
             font-size: 1em;
@@ -262,6 +276,16 @@ ul.h_menu {
     display: none;
 }
 
+#dsq-comments {
+    display: none;
+}
+
+#dsq-content {
+    h3 {
+        visibility: hidden;
+    }
+}
+
 #dsq-global-toolbar {
     position: absolute;
     left: 35.2em;
@@ -278,6 +302,7 @@ ul.h_menu {
 }
 
 .dsq-brlink {
+    display: none;
     color: @color_paragraph;
 }
  .dsq-global-toolbar-left {
